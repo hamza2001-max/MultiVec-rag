@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+venv/
+
+# Node.js
+node_modules/
+
+# Build
+dist/
+build/
+
+# Docker
+*.log
+*.pid
+*.sock
+*.env
+*.coverage
+*.tox
+.cache
+coverage/
+
+# Others
+.DS_Store
+.vscode/
+.idea/

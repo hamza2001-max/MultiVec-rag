@@ -1,0 +1,15 @@
+-[x] Establish the backend and frontend for fastapi.
+-[x] Create a train modal button.
+-[x] Generate chat history (user input and bot output).
+-[x] Install tailwind.
+-[x] Create a temporary design for the frontend.
+-[x] First check if chroma_db exist every query, if it doesnt then train the modal.
+-[] For AI message do the sound, copy and requery thing.
+-[] Improve intent recognition.
+-[] Dont process the large vectorstore everytime
+-[] Message persistence using local storage or a database.
+-[] User authentication and personalized chat history.
+-[] The ability to upload documents for training directly from the frontend.
+-[] A feature to clear the chat history or start a new conversation.
+-[] Implementing a dark mode toggle for the UI.
+-[] Adding voice input and text-to-speech output options.
