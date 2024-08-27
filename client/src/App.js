@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import { AnimatePresence } from "framer-motion";
-import { SendHorizontal, Sparkles } from "lucide-react";
+import { Plus, SendHorizontal, Sparkles } from "lucide-react";
 import WelcomeMessage from "./Components/WelcomeMessage";
 import MessageBubble from "./Components/MessageBubble";
 import LoadingDots from "./Components/LoadingDots";
@@ -88,10 +88,11 @@ function App() {
             <h1 className="text-2xl font-semibold">IMS Assistant</h1>
           </div>
           <button
-            className="flex items-center space-x-3 px-4 py-2 rounded-full shadow-md"
-            onClick={handleNewChat} // Call handleNewChat on click
+            className="text-white flex items-center space-x-3 px-4 py-2 rounded-full shadow-md bg-gradient-to-r from-[#00c6ff] via-[#2a8aff] to-[#00ffb4]"
+            onClick={handleNewChat} 
           >
-            <svg
+            <Plus/>
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
               viewBox="0 0 24 24"
@@ -109,8 +110,8 @@ function App() {
                 </linearGradient>
               </defs>
               <path d="M12 5v14M5 12h14" />
-            </svg>
-            <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#00c6ff] via-[#0072ff] to-[#00ffb4]">
+            </svg> */}
+            <p className="font-semibold text-lg">
               New Chat
             </p>
           </button>

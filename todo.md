@@ -13,3 +13,5 @@
 -[] A feature to clear the chat history or start a new conversation.
 -[] Implementing a dark mode toggle for the UI.
 -[] Adding voice input and text-to-speech output options.
+-[] Voice to text and text to voice.
+-[] Do something about the sources as well.

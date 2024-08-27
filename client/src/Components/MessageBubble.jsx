@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Bot, User } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Bot, Copy, RotateCcw, User, Volume2 } from "lucide-react";
 
 const MessageBubble = ({ message }) => {
   return (
@@ -24,7 +24,7 @@ const MessageBubble = ({ message }) => {
         className={`max-w-[60%] rounded-lg px-7 py-4 text-lg ${
           message.type === "user"
             ? "bg-[#6a7eff] text-white"
-            : "bg-gray-100 text-gray-800"
+            : "bg-gray-100 text-black"
         }`}
       >
         <div dangerouslySetInnerHTML={{ __html: message.content }} />
@@ -36,6 +36,13 @@ const MessageBubble = ({ message }) => {
                 <li key={index}>{source}</li>
               ))}
             </ul>
+          </div>
+        )}
+        {message.type === "ai" && (
+          <div className="flex items-center space-x-4 mt-4">
+            <Volume2 className="w-4 h-4 cursor-pointer" />
+            <Copy className="w-4 h-4 cursor-pointer" />
+            <RotateCcw className="w-4 h-4 cursor-pointer" />
           </div>
         )}
       </div>
